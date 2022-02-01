@@ -73,6 +73,13 @@ function Lhander_enqueue_scripts()
       'All'
     );
     wp_enqueue_style(
+      'lhander-style',
+      get_theme_file_uri('assets/css/style.css'),
+      [],
+      false,
+      'All'
+    );
+    wp_enqueue_style(
       'lhander-main',
       get_theme_file_uri('assets/css/main.css'),
       [],
@@ -96,6 +103,13 @@ function Lhander_enqueue_scripts()
     wp_enqueue_style(
       'lhander-micons',
       get_theme_file_uri('assets/css/micons/micons.css'),
+      ['lhander-main'],
+      false,
+      'All'
+    );
+    wp_enqueue_style(
+      'lhander-fonts',
+      get_theme_file_uri('assets/css/fonts.css'),
       ['lhander-main'],
       false,
       'All'

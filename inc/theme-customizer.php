@@ -376,8 +376,8 @@ function Lhander_theme_customize(WP_Customize_Manager $customizer)
     ]);
 
     //show pincel icon
-    $customizer->selective_refresh->add_partial('free-heading', [
-        'selector'   => '#faq .section-intro',
+    $customizer->selective_refresh->add_partial('quation-main-heading', [
+        'selector'   => '#faq .section-intro h1',
     ]);
     //show pincel icon
     $customizer->selective_refresh->add_partial('recommendction-heading', [
