@@ -132,6 +132,8 @@ function lhander_custom_post_type_QA()
 }
 add_action('init', 'lhander_custom_post_type_QA', 0);
 
+flush_rewrite_rules();
+
 //add meta boxes
 function  lhander_add_metabax()
 {
